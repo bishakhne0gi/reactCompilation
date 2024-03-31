@@ -52,6 +52,28 @@ Yes
             const [count, dispatch] = useReducer(reducer, initialState);
             The reducer function itself accepts two parameters and returns one value. The first parameter is the current state, and the second is the action. 
 
+12. useEffect
+<https://blog.logrocket.com/using-react-useeffect-hook-lifecycle-methods/>
+    Component lifecycle and lifecycle methods
+       1. Mounting phase with componentDidMount
+       2. Updating phase with shouldComponentUpdate and componentDidUpdate
+       3. Unmounting phase with componentWillUnmount
+    Using useEffect to apply lifecycle methods in functional components
+        1. Using componentDidMount in functional components with useEffect
+        2. Using the componentDidUpdate with useEffect
+        3. Using componentWillUnmount with useEffect
+
+    Mounting phase with componentDidMount
+This is the first stage of a React component’s lifecycle where the component is created and inserted into the DOM. In this lifecycle stage, we have the componentDidMount lifecycle method, and executes when our component mounts:
+
+componentDidMount() {
+  console.log("The component has mounted successfully!");
+  this.setState({
+    loaded: true
+  })
+}
+componentDidMount allows us to use setState so we can easily set and modify our state in the lifecycle method. This lifecycle method executes API calls, make calls to remote endpoints, and retrieves data.
+
+In this stage, the render method renders the component into the DOM and is the only method required.
+13. useRef
 12. useCallback
-13. useEffect
-14. useRef

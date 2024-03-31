@@ -4,6 +4,7 @@ import App from './App'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import State1 from './useState/State1'
 import State2 from './useReducer/State2'
+import State3 from './useEffect/State3'
 
 //react cannot understand this language 
 // i.e. type, props, children
@@ -55,6 +56,10 @@ const router = createBrowserRouter(
     {
       path: '/usereducer',
       element: <State2 />
+    },
+    {
+      path: '/useeffect',
+      element: <State3 />
     },
 
 
