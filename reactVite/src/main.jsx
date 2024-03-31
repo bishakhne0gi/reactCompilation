@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import State1 from './useState/State1'
+import State2 from './useReducer/State2'
 
 //react cannot understand this language 
 // i.e. type, props, children
@@ -50,7 +51,12 @@ const router = createBrowserRouter(
     {
       path: '/usestate',
       element: <State1 />
-    }
+    },
+    {
+      path: '/usereducer',
+      element: <State2 />
+    },
+
 
   ]
 )

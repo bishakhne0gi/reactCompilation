@@ -48,7 +48,7 @@ const State1 = () => {
                 />
             </div>
             <div>{name}</div>
-
+            <div>Result</div>
         </>
     )
 }
