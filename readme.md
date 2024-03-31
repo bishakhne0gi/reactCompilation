@@ -76,4 +76,6 @@ componentDidMount allows us to use setState so we can easily set and modify our 
 
 In this stage, the render method renders the component into the DOM and is the only method required.
 13. useRef
+<https://medium.com/@zahidbashirkhan/react-useref-use-cases-with-examples-d7680d48a6e1>
+In React.js, useRef is a hook that allows you to create a mutable reference to an element or a value. Unlike the useState hook, updating a useRef does not trigger a re-render of the component. It's commonly used for accessing and managing DOM elements directly, storing persistent values, or working with values that should not trigger a re-render.
 12. useCallback
